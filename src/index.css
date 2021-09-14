@@ -1,13 +1,89 @@
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  padding:0;
+  margin:0;
+}
+
 body {
-  margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  background: #F1F5F8;
+  line-height: 1.4;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+ul {
+  list-style-type: none;
+}
+
+
+.container {
+  width:80%;
+  margin:0 auto;
+  text-align: center;
+}
+
+.container__heading {
+  margin:2rem 0 2rem 0;
+}
+
+
+.contact-input-container {
+  margin:2rem 0 2rem 0;
+}
+
+.contact-form {
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items:center;
+}
+
+
+
+
+
+
+.contact {
+  display:flex;
+  justify-content: space-between;
+  margin:1rem 0;
+  padding:0.5rem;
+  background:#e6e6e6;
+  color:#222;
+  text-align: left;
+}
+
+.contact__name {
+  font-size:1.15rem;
+  font-weight: 500;
+  color:#000;
+}
+
+
+
+.contact__modify-contact {
+  display:flex;
+  align-items: center;
+  gap:0.5rem;
+}
+
+
+.btn {
+  padding:0.25rem 0.5rem;
+  cursor: pointer;
+}
+
+.delete-all-btn {
+  margin-top: 0.5rem;
 }
